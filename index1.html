@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanskriti sagar</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sanskriti Sagar</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Temples</a>
+            <a href="#">Festivals</a>
+            <a href="#">Culture</a>
+            <a href="#">Mythology</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+    </header>
+
+    <section class="hero">
+        <h2>Discover the Soul of India</h2>
+        <p>Explore Temples, Festivals, and Culture</p>
+        <button id="exploreButton">Explore Now</button>
+    </section>
+
+    <!-- <section class="search">
+        <input type="text" id="search-input" placeholder="Search Temples or Festivals...">
+    </section> -->
+    <!-- <label for="state">SELECT A STATE</label> -->
+<select name="STATE" id="state">
+    <option value="" disabled selected>SELECT STATE</option>
+    <option value="delhi" >DELHI</option>
+    <option value="rajasthan">RAJASTHAN</option>
+    <option value="tamilnadu">TAMILNADU</option>
+    <option value="maharashtra">MAHARASHTRA</option>
+    <option value="uttrakhand">UTTARAKHAND</option>
+</select>
+<button id="go" onclick="navigateToState()">Go</button>
+
+
+    <section class="temples">
+        <h2>Temples of India</h2>
+        <div class="temple-card">
+            <img id="kedarnath" src="kedarnath.jpg" alt="Kedarnath Temple">
+            <h3>Kedarnath Temple</h3>
+            <p>One of the 12 Jyotirlingas, dedicated to Lord Shiva.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="temple-card">
+            <img id="konark" src="konark.jpg" alt="Konark Sun Temple">
+            <h3>Konark Sun Temple</h3>
+            <p>A UNESCO heritage site built in the 13th century.</p>
+            <button>Read More</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Bharat Heritage. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function navigateToState() {
+        var selectedState = document.getElementById("state").value;
+        if (selectedState) {
+            window.location.href = selectedState.toLowerCase() + ".html";
+        } else {
+            alert("Please select a state first!");
+        }
+    }
+    </script>
+    
+</body>
+</html>

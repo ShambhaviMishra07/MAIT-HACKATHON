@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f5ed;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+header {
+    background: #8b0000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+
+
+.hero {
+    text-align: center;
+    padding: 120px;
+    background: url(india-banner.jpg) no-repeat center ;
+    background-size: cover;
+    color: black;
+    animation: fadeIn 1.5s;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* .search {
+    text-align: center;
+    margin: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+} */
+
+
+select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
+select:hover {
+    border-color: #0056b3;
+}
+
+select:focus {
+    background-color: #e6f2ff;
+}
+
+.temples {
+    text-align: center;
+}
+
+.temple-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background: white;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    height: 30%;
+    width: 40%;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .temple-card {
+    background: #1e1e1e;
+    border-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8b0000;
+    color: white;
+}
+#exploreButton{
+    font-size: 20px;  /* Increased text size */
+    padding: 15px 30px;  /* Bigger button */
+    background: #ff8c00;  /* Vibrant orange */
+    color: white;
+    border: none;
+    border-radius: 8px;  /* Smooth edges */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#exploreButton:hover{
+    background: #ff6500;  /* Darker orange */
+    transform: scale(1.1);  /* Slight enlargement */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+#exploreButton:active {
+    transform: scale(0.95);  /* Slight shrink effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.temples {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.temples h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Temple Card Styling */
+.temple-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.temple-card:hover {
+    transform: scale(1.05);
+}
+
+/* Temple Image Styling */
+.temple-card img {
+    width: 100%;
+    height: 200px; /* Adjust height for uniformity */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.temple-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #444;
+}
+
+.temple-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.temple-card button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.temple-card button:hover {
+    background-color: #e64a19;
+}
+
+#go
+{
+    margin-left:45%;
+    margin-right: 45%;
+    height: 50px;
+    margin-top: 25px;
+    width: 60px;
+    background-color: rgb(72, 231, 72);
+    border-radius: 5px;
+}

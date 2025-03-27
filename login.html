@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Sanskriti Sagar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Temples</a>
+            <a href="#">Festivals</a>
+            <a href="#">Culture</a>
+            <a href="#">Mythology</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section id="login-section">
+        <h2>Login</h2>
+        <form id="loginForm">  <!-- ✅ Added form -->
+            <input type="text" id="username" placeholder="Enter your name">
+            <span id="usernameError" class="error"></span> <!-- Error message placeholder -->
+
+            <input type="email" id="email" placeholder="Enter your email">
+            <span id="emailError" class="error"></span> <!-- Error message placeholder -->
+
+            <input type="password" id="password" placeholder="Enter your password">
+            <span id="passwordError" class="error"></span> 
+
+            <button type="submit">Submit</button>  
+        </form>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>
